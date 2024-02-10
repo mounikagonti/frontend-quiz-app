@@ -1,0 +1,20 @@
+@mixin displayCenter($aline-items, $justify-content) {
+  display: flex;
+  align-items: $aline-items;
+  justify-content: $justify-content;
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xlg: 1200px;
+
+$brand_color: #313e51;
+$second_brand: #3c4c67;
+$purple_color: #9d28e5;
+$second_purple: #be82df;
+$blue_color: #6c8ec8;
+$green_color: #6bcca5;
+$brown_color:#e6a9a9;
+$white_color: #ffffff;
+$second_font_color: #78849b;

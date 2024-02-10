@@ -1,0 +1,43 @@
+.resultModel_wrapper {
+  @include displayCenter(center, center);
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  background-color: $white_color;
+  color: black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 10;
+  .text {
+    font-size: 30px;
+    color: green;
+  }
+  h1 {
+    margin-top: 20px;
+  }
+  .ok_btn {
+    margin-top: 10px;
+    @include displayCenter(center, center);
+    padding: 10px 25px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    color: $white_color;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .resultModel_wrapper {
+    width: 250px;
+    height: 250px;
+    .text {
+      font-size: 20px;
+      color: green;
+    }
+    .ok_btn {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+  }
+}
